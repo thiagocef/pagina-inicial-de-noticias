@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Montserrat" sans-serif;
+    src: url('https://fonts.google.com/specimen/Montserrat');
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: .05rem;
+}
+
+:root {
+    --white: #ffffff;
+    --cream: #f2ebe3;
+    --dark: #6c7289;
+    --very-dark: #1c232b;
+    --title: #ffc355;
+    --btn: #ee534b;
+}
+
+/*---------------- BODY -----------------*/
+
+body {
+    padding: 20px 90px;
+    position: relative;
+}
+
+/*---------------- HEADER -----------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-t {
+    color: var(--very-dark);
+    font-size: 3rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 50px;
+    color: var(--dark);
+}
+
+.navigation li:hover,
+.menu-mobile li:hover {
+    cursor: pointer;
+    color: var(--btn);
+}
+
+.mClose:hover,
+.mOpen:hover {
+    cursor: pointer;
+}
+
+/*------------- MENU HAMBURGER --------------*/
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu-hamburger-close {
+    display: none;
+}
+
+.menu-hamburger-on {
+    display: flex;
+}
+
+.menu-hamburger-off {
+    display: none;
+}
+
+/*---------------- MAIN -----------------*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mainSection {
+    grid-column: 1/3;
+}
+
+.mainSection img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mainSection article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.title {
+    color: var(--very-dark);
+    min-width: 250px;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.description {
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    gap: 30px;
+}
+
+.description p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--dark);
+}
+
+button {
+    font-size: 1rem;
+    letter-spacing: .30rem;
+    padding: 15px 30px;
+    background-color: var(--btn);
+    border: none;
+    color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--very-dark);
+}
+
+/*---------------- NEW -----------------*/
+
+.new {
+    background-color: var(--very-dark);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.new h2 {
+    color: var(--title);
+    font-size: 2.3rem;
+}
+
+.new h3 {
+    color: var(--cream);
+    margin-bottom: 15px;
+}
+
+.new h3:hover {
+    cursor: pointer;
+    color: var(--title);
+}
+
+.new p {
+    color: var(--dark);
+    line-height: 25px;
+}
+
+.new div:nth-child(3) {
+    border-top: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
+    padding: 45px 0;
+}
+
+/*---------------- TRENDS -----------------*/
+
+.trends {
+    margin-top: 70px;
+}
+
+.trends img {
+    width: 100px;
+}
+
+.trends ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends li {
+    display: flex;
+    min-width: 200px;
+}
+
+.trends li div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.trends h4 {
+    font-size: 2.3rem;
+    color: var(--dark);
+}
+
+.trends h5 {
+    font-size: 1rem;
+    color: var(--very-dark);
+}
+
+.trends h5:hover {
+    cursor: pointer;
+    color: var(--btn);
+}
+
+.trends p {
+    line-height: 25px;
+    color: var(--dark);
+}
+
+/*---------------- FOOTER -----------------*/
+
+footer {
+    border-top: 1px solid var(--cream);
+    color: var(--dark);
+
+    margin-top: 100px;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dev {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: var(--very-dark);
+}
+
+.redes h5 {
+    font-size: 1.3rem;
+    color: var(--very-dark);
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    color: var(--dark);
+    font-size: 2.3rem;
+}
+
+.icons i:hover {
+    color: var(--very-dark);
+}
