@@ -2,12 +2,12 @@
 Criei uma Página inicial de notícias
 
 Utilizei: 
-HTML
-CSS Grid
+HTML,
+CSS Grid,
 Javascript
 
 O site possui:
-Menu Hamburguer para telas menores
-Acessibilidade
-Responsividade
+Menu Hamburguer para telas menores,
+Acessibilidade,
+Responsividade,
 Imagem Dinâmica
